@@ -1,0 +1,43 @@
+{ 
+  "api_res":{
+    "EMAIL_NOT_FOUND": "The email you are looking doesn't exist.",
+    "INVALID_PASSWORD": "Wrong password",
+    "USER_DISABLED": "This account has been disabled by an administrator.",
+    "SIGNUP_SUCCESS":"Account has been successfully created."
+  },
+  "toastr":{
+    "error_title": "Error", 
+    "success_title":"Success",
+    "info_title":"Info!"
+  },
+  "label":{
+    "email":"E-mail",
+    "password":"Password",
+    "sign_up":"Sign up",
+    "confirm_password":"Confirm password"     
+  },
+  "button": {
+    "sign_up": "Sign up",
+    "login": "Login",
+    "add":"Add",
+    "toggle": "Toggle"
+  },
+  "placeholder": {
+    "add_number": "Enter a number to add"
+  },
+  "tooltip": {
+    "increment_number": "Increment number",
+    "decrement_number": "Decrement number",
+    "reset_number": "Reset number",
+    "add_number": "Add a number",
+    "toggle": "Toggle"
+  },
+  "form_error": {
+    "password_regex_msg": "Password must containe least one digit, one small letter, one capital letter and one special character.",
+    "only_letters_regex_msg": "Only letters are allowed.",
+    "email_regex_msg": "Invalid email ID.",
+    "required_regex_msg": "Value is required.",
+    "minlength_regex_msg": "Text minimum length should be {{min_length}}",
+    "only_integer": "Only integer is allowed"
+  }
+}

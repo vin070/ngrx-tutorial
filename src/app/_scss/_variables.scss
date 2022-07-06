@@ -1,0 +1,53 @@
+/*Font sizes starts from here*/
+$font_10: 10px;
+$font_12: 12px;
+$font_14: 14px;
+
+/*Font weights starts from here*/
+$font_weight_400: 400;
+$font_weight_500: 500;
+$font_weight_700: 700;
+$font_weight_800: 800;
+
+/*colour colours starts from here*/
+/*Primary button colour*/ 
+$colour-0d6efd: #0d6efd;
+$colour-ffc107: #ffc107;
+$colour-6c757d: #6c757d;
+/*Close button colour*/
+$colour-dc3545: #dc3545;
+$colour-000000: #000000;
+/*Background colour for loader*/
+$colour-00000080: #00000080;
+$colour-ffffff: #ffffff;
+/*Border colour*/
+$colour-a9a9a9: #a9a9a9;
+
+
+/*Colour start from here*/
+
+/*Z-index*/
+$loader: 3;
+$loader_backdrop: 2;
+
+/*Text direction left to right */
+$text_direction: ltr;
+
+/*Padding common for button and input box */
+$btn_padding: 0.5rem 0.75rem;
+
+/*Text align*/
+$input_text_align: left;
+
+/*Border radius */
+$btn_border_radius: .25rem;
+
+$spacer: 1rem !default;
+$spacers: (
+  0: 0,
+  1: $spacer * .25,
+  2: $spacer * .5,
+  3: $spacer,
+  4: $spacer * 1.5,
+  5: $spacer * 3,
+) !default;

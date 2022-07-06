@@ -1,0 +1,20 @@
+<div id="login_container">
+    <form [formGroup]="login_form" (submit)="handle_login()">
+        <div>
+            <label for="email_id">{{ 'label.email' | translate }}*</label>
+        </div>
+        <div>
+            <input type="email" class="form_control_input" id="email_id" formControlName="email">
+        </div>
+        <div class="form_control_error">{{ _form_error_handler.handle_form_error(login_form_controls.email) | async }}</div>
+    
+        <div class="mt-2">
+            <label for="password">{{ 'label.password' | translate }}*</label>
+        </div>
+        <div>
+            <input type="password" id="password" class="form_control_input" formControlName="password">
+        </div>
+        <div class="form_control_error">{{ _form_error_handler.handle_form_error(login_form_controls.password) | async}}</div>
+        <button type="submit" class="btn_success mt-2">{{ 'button.login' | translate}}</button>
+    </form>
+</div>

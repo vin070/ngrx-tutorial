@@ -1,0 +1,27 @@
+<div id="content">
+     <div>
+          <span> {{ counter$ | async }} </span>
+          <button class="btn_6c757d ml-2" (click)="handle_increment()"
+               [attr.title]="'tooltip.increment_number' | translate">
+               <app-plus-svg fill="#ffffff"></app-plus-svg>
+          </button>
+          <button class="btn_6c757d ml-2" (click)="handle_decrement()"
+               [attr.title]="'tooltip.decrement_number' | translate">
+               <app-minus-svg fill="#ffffff"></app-minus-svg>
+          </button>
+          <button class="btn_close ml-2" (click)="handle_reset()" [attr.title]="'tooltip.reset_number' | translate">
+               <app-reset-svg fill="#ffffff"></app-reset-svg>
+          </button>
+     </div>
+     <div class="mt-2">
+          <input type="number" class="form_control_input" [placeholder]="'placeholder.add_number' | translate"
+               [formControl]="custom_input">
+          <button class="btn_success ml-2" (click)="dispatch_custom_increment()"
+               [attr.title]="'tooltip.add_number' | translate">{{'button.add'| translate }}</button>
+     </div>
+     <div class="mt-2">
+          <span class="hello">{{hello$ | async }}</span>
+          <button class="btn_success mx-2" (click)="dispatch_hello_modified()"
+               [attr.title]="'tooltip.toggle' | translate">{{ 'button.toggle' | translate }} </button>
+     </div>
+</div>

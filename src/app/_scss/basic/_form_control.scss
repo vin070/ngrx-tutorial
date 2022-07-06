@@ -1,0 +1,25 @@
+.form_control{
+    &_input {
+        border: 1px solid $colour-a9a9a9;
+        font-size: $font_14;
+        direction: $text_direction;
+        cursor: text;
+        padding: $btn_padding;
+        text-align: $input_text_align;
+        overflow-x: hidden;
+        overflow-y: auto;
+        border-radius: $btn_border_radius;
+    
+        &:focus { 
+            outline: none;
+        }
+    
+        &::placeholder {
+            font-weight: $font_weight_500;
+        }
+    }
+    
+    &_error {
+        color: $colour-dc3545;
+    }
+}

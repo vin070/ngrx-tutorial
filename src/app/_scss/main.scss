@@ -1,0 +1,19 @@
+/* Controls the entire project colour coding, font weight,
+ font size, using single file*/
+@import 'variables';
+
+/* Basic building blocks for every component*/
+@import 'basic/cursor';
+@import 'basic/toastr';
+@import 'basic/buttons';
+@import 'basic/dropdown';
+@import 'basic/form_control';
+@import 'basic/loader';
+@import 'basic/modal';
+@import 'basic/table';
+@import 'basic/utilities';
+@import 'basic/mixin';
+
+/*Component specific css*/
+@import 'components/counter.component';
+@import 'components/login.component';
