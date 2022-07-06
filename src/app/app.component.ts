@@ -10,7 +10,7 @@ import { loading_selector$ } from './store/app.selector';
   templateUrl: './app.component.html'
 })
 export class AppComponent {
-  title = 'ngrx-practice';
+  title = 'ngrx_tutorial';
   loading$: Observable<boolean>;
 
   constructor(private _store: Store<store_state>) {

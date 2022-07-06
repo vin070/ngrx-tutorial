@@ -33,5 +33,10 @@ $utilities: (
         class: mr,
         property: margin-right,
         values: $spacers
+    ),
+    "cursor": (
+        class: cursor,
+        property: cursor,
+        values: $cursors
     )
 ) !default;
