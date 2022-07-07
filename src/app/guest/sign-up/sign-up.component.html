@@ -8,21 +8,23 @@
         </div>
         <div class="form_control_error">{{ _form_error_handler.handle_form_error(sign_up_form_controls.email) | async }}
         </div>
-        <div class="mt-2">
+        <div class="mt_2">
             <label class="label">{{ 'label.password' | translate }}*</label>
         </div>
         <div>
             <input type="password" class="form-control" formControlName="password">
         </div>
-        <div  class="form_control_error">{{ _form_error_handler.handle_form_error(sign_up_form_controls.password) | async }}
+        <div class="form_control_error">{{ _form_error_handler.handle_form_error(sign_up_form_controls.password) | async
+            }}
         </div>
-        <div class="mt-2">
+        <div class="mt_2">
             <label for="confirm_password">{{ 'label.confirm_password' | translate }}*</label>
         </div>
         <div>
-            <input type="password" id="confirm_password" class="form_control_input" formControlName="password">
+            <input type="password" id="confirm_password" class="form_control_input" formControlName="confirm_password">
         </div>
-        <div class="form_control_error">{{ _form_error_handler.handle_form_error(sign_up_form_controls.password) | async}}</div>
-        <button type="submit" class="btn_success mt-2">{{ 'button.sign_up' | translate }}</button>
+        <div class="form_control_error">{{ _form_error_handler.handle_form_error(sign_up_form_controls.confirm_password)
+            | async}}</div>
+        <button type="submit" class="btn_success mt_2">{{ 'button.sign_up' | translate }}</button>
     </form>
 </div>

@@ -74,7 +74,7 @@ export class loginEffects {
   login_success$ = createEffect(
     () => {
       return this._actions.pipe(
-        ofType(login_success),
+        ofType(login_success, signup_success),
         tap((action: any) => {
           this.automatic_logout(+action.login.expires_in * 1000);
           this._router.navigateByUrl('/logged_in/content');
@@ -96,6 +96,8 @@ export class loginEffects {
           .pipe(
             map((response: login_success_res) => {
               this._store.dispatch(loading({ loading: false }));
+              console.log(response)
+              localStorage.setItem('login_data', JSON.stringify(response));
               this._translation_service
                 .get(['api_res.SIGNUP_SUCCESS', 'toastr.success_title'])
                 .subscribe((translate_res: any) => {

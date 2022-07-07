@@ -1,4 +1,4 @@
-@mixin convert_utility($separator:"_") {
+@mixin convert_utility($separator: $seprator) {
     @each $utility_key, $utility_value in $utilities {
         $values: map-get($utility_value, values);
         $class: map-get($utility_value, class);

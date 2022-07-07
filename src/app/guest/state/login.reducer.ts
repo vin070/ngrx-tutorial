@@ -9,7 +9,7 @@ export const login_reducer = createReducer(
     return login_adapter.addOne(action.login, state);
   }),
   on(signup_success, (state: login, action: any):login => {
-    return login_adapter.addOne(action, state);
+    return login_adapter.addOne(action.login, state);
   }),
   on(log_out, (state: login):login => {
     return login_adapter.removeAll(state);

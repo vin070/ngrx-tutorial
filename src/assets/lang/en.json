@@ -38,6 +38,7 @@
     "email_regex_msg": "Invalid email ID.",
     "required_regex_msg": "Value is required.",
     "minlength_regex_msg": "Text minimum length should be {{min_length}}",
-    "only_integer": "Only integer is allowed"
+    "only_integer": "Only integer is allowed",
+    "password_mismatch": "Password and confirm password do not match"
   }
 }

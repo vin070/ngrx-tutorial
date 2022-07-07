@@ -43,7 +43,7 @@ export class SignUpComponent {
           ),
         ],
       ]
-    },
+    }, { validator: this._form_error_handler.control_equality_checker('password', 'confirm_password')},
     );
   }
 

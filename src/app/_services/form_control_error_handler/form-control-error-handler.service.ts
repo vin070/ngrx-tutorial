@@ -1,8 +1,7 @@
 import { of, Observable } from 'rxjs';
 import { Injectable } from '@angular/core';
-import { AbstractControl } from '@angular/forms';
 import { TranslateService } from '@ngx-translate/core';
-
+import { AbstractControl, FormGroup } from '@angular/forms';
 @Injectable({
   providedIn: 'root',
 })
@@ -37,6 +36,7 @@ export class FormControlErrorHandlerService {
     email: 'form_error.email_regex_msg',
     required: 'form_error.required_regex_msg',
     minlength: 'form_error.minlength_regex_msg',
+    password_mismatch: 'form_error.password_mismatch'
   };
 
   constructor(private _translation_service: TranslateService) {}
@@ -69,10 +69,25 @@ export class FormControlErrorHandlerService {
           return this._translation_service.get(this.regex_error_desc[error]);
           break;
 
+        case 'password_mismatch':
+          return this._translation_service.get(this.regex_error_desc[error]);
+          break;
+
         default:
           return of('');
           break;
       }
     }
+  }
+
+  control_equality_checker(control_name1: string, control_name2: string) {
+    return (form_group: FormGroup) => {
+      let control: AbstractControl = form_group.controls[control_name1];
+      let matching_control: AbstractControl = form_group.controls[control_name2];
+      
+      if (control.value == matching_control.value)
+        matching_control.setErrors(null);
+      else matching_control.setErrors({ password_mismatch: true });
+    };
   }
 }
