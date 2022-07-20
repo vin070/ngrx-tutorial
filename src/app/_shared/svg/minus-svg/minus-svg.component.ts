@@ -2,8 +2,7 @@ import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-minus-svg',
-  templateUrl: './minus-svg.component.html',
-  styleUrls: ['./minus-svg.component.scss'],
+  templateUrl: './minus-svg.component.html'
 })
 export class MinusSvgComponent {
   @Input() width: string = '16';

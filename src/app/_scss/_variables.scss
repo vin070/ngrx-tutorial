@@ -2,6 +2,7 @@
 $font_10: 10px;
 $font_12: 12px;
 $font_14: 14px;
+$font_16: 16px;
 
 /*Font weights starts from here*/
 $font_weight_400: 400;
@@ -22,6 +23,7 @@ $colour-00000080: #00000080;
 $colour-ffffff: #ffffff;
 /*Border colour*/
 $colour-a9a9a9: #a9a9a9;
+$colour-6c757d4f: #6c757d4f;
 
 
 /*Colour start from here*/
@@ -60,3 +62,8 @@ $cursors: (
 ) !default;
 
 $seprator: "_";
+
+/* Navigation width, left and top spacing for navigated component */
+$left_navigation_width: 80px;
+$margin-top: 30px;
+$padding-left: 20px;

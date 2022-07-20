@@ -24,6 +24,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SharedComponentModule } from './_shared/shared-component.module';
 import { HttpInterceptorService } from './_services/http_interceptor/http-interceptor.service';
 import { CustomSerializerService } from './_services/custom_serializer/custom-serializer.service';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [AppComponent],
@@ -54,6 +55,7 @@ import { CustomSerializerService } from './_services/custom_serializer/custom-se
     AngularFireModule.initializeApp(environment.firebase_config),
     SharedComponentModule,
     BrowserAnimationsModule,
+    NgbModule,
   ],
   // providers: [{
   //   provide: HTTP_INTERCEPTORS,

@@ -1,16 +1,17 @@
 <form [formGroup]="take_input">
-    <div class="mt-2">
-        <label for="title">Title</label>
-        <input type="text" id="title" class="form-control" formControlName="title">
-        <span class="form-error">{{ _form_error_handler.handle_form_error(take_input_controls.title) | async }}</span>
+    <div class="mt_2">
+        <label for="title">{{ 'label.title' | translate }}</label>
+        <input type="text" id="title" class="form_control_input" formControlName="title">
+        <span class="form_control_error">{{ _form_error_handler.handle_form_error(take_input_controls.title) | async }}</span>
     </div>
-    <div class="mt-2">
-        <label for="description">Description</label>
-        <textarea id="description" class="form-control" cols="30" rows="10" formControlName="description"></textarea>
-        <span class="form-error">{{ _form_error_handler.handle_form_error(take_input_controls.description) | async
+    <div class="mt_2">
+        <label for="description">{{ 'label.description' | translate }}</label>
+        <textarea id="description" class="form_control_input" cols="30" rows="10" formControlName="description"></textarea>
+        <span class="form_control_error">{{ _form_error_handler.handle_form_error(take_input_controls.description) | async
             }}</span>
     </div>
-    <div class="mt-2">
-        <button class="btn btn-primary" (click)="handle_input()">Add</button>
+    <div class="mt_2">
+        <button class="btn_success" (click)="handle_input()">{{ 'button.add' | translate }}</button>
+        <button class="btn_close ml_2">{{ 'button.cancel' | translate }}</button>
     </div>
 </form>

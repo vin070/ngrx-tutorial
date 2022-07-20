@@ -10,7 +10,7 @@ import { FormControlErrorHandlerService } from '../../../_services/form_control_
   selector: 'app-take-input',
   templateUrl: './take-input.component.html'
 })
-export class TakeInputComponent {
+export class TakeInputComponent  {
   take_input: FormGroup;
 
   constructor(

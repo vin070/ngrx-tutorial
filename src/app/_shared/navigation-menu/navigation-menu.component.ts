@@ -8,8 +8,7 @@ import { is_logged_in } from '../../guest/state/login.selector';
 
 @Component({
   selector: 'app-navigation-menu',
-  templateUrl: './navigation-menu.component.html',
-  styleUrls: ['./navigation-menu.component.scss'],
+  templateUrl: './navigation-menu.component.html'
 })
 export class NavigationMenuComponent implements OnInit {
   navigation_menu: Array<navigation_menu> = [];
@@ -19,20 +18,23 @@ export class NavigationMenuComponent implements OnInit {
   ngOnInit(): void {
     this.navigation_menu = [
       {
-        anchor_text: 'Home',
+        anchor_text: 'navigation.home',
         anchor_link: '/logged_in/content',
+        tooltip: 'tooltip.home',
         selected: true,
         visible: true,
       },
       {
-        anchor_text: 'Post',
+        anchor_text: 'navigation.post',
         anchor_link: '/logged_in/post',
+        tooltip: 'tooltip.post',
         selected: false,
         visible: true,
       },
       {
-        anchor_text: 'Logout',
+        anchor_text: 'navigation.logout',
         anchor_link: '/guest/login',
+        tooltip: 'tooltip.logout',
         selected: false,
         visible: true,
       },

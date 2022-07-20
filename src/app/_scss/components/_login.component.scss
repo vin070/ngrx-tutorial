@@ -24,4 +24,8 @@
 .a_no_underline {
     text-decoration: none;
     color: $colour-ffffff;
+
+    &:hover {
+        color: $colour-ffffff;
+    }
 }

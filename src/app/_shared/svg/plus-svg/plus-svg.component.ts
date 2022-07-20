@@ -2,8 +2,7 @@ import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-plus-svg',
-  templateUrl: './plus-svg.component.html',
-  styleUrls: ['./plus-svg.component.scss'],
+  templateUrl: './plus-svg.component.html'
 })
 export class PlusSvgComponent {
 

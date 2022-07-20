@@ -1,7 +1,8 @@
-<div class="row">
-    <div class="col cursor_pointer" *ngFor="let menu of navigation_menu; let is_first = first; let i = index" 
-         (click)="select_menu(i,$event)" [ngClass]="{'ml-1':is_first}" [style.background-color]="menu.selected?'green':'red'"
-         [hidden]="!menu.visible">
-             <a [attr.routerLink]="menu.anchor_link">{{menu.anchor_text}}</a>  
-    </div>
-</div>
+<li id="navigation_container">
+    <a class="navigation cursor_pointer"
+        *ngFor="let menu of navigation_menu; let is_first = first; let i = index"
+        [ngClass]="{'active_link': menu.selected, 'mt_2': !is_first}"
+        [attr.title]="menu.tooltip | translate"
+        (click)="select_menu(i,$event)">{{menu.anchor_text | translate }}
+    </a>
+</li>

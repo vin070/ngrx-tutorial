@@ -20,7 +20,7 @@ export class PostListComponent {
     this.post_list$ = this._store.select(post_selector);
   }
 
-  handle_delete_post(id: string): void {
+  handle_delete_post(id: any): void {
     if (!confirm('Are you sure you want to delete this post')) return;
 
     this._store.dispatch(delete_post({ id }));

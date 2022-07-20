@@ -4,7 +4,7 @@
             <label class="label">{{ 'label.email' | translate }}*</label>
         </div>
         <div>
-            <input type="email" class="form-control" formControlName="email" autocomplete>
+            <input type="email" class="form_control_input" formControlName="email" autocomplete>
         </div>
         <div class="form_control_error">{{ _form_error_handler.handle_form_error(sign_up_form_controls.email) | async }}
         </div>
@@ -12,7 +12,7 @@
             <label class="label">{{ 'label.password' | translate }}*</label>
         </div>
         <div>
-            <input type="password" class="form-control" formControlName="password">
+            <input type="password" class="form_control_input" formControlName="password">
         </div>
         <div class="form_control_error">{{ _form_error_handler.handle_form_error(sign_up_form_controls.password) | async
             }}

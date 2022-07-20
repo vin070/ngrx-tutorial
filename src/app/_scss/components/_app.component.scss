@@ -1,0 +1,16 @@
+#main_container, body {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.component_title {
+    color: $colour-00000080;
+    font-size: $font_16;
+    font-weight: $font_weight_700;
+}

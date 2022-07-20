@@ -1,26 +1,36 @@
-{ 
-  "api_res":{
+{
+  "api_res": {
     "EMAIL_NOT_FOUND": "The email you are looking doesn't exist.",
     "INVALID_PASSWORD": "Wrong password",
     "USER_DISABLED": "This account has been disabled by an administrator.",
-    "SIGNUP_SUCCESS":"Account has been successfully created."
+    "SIGNUP_SUCCESS": "Account has been successfully created."
   },
-  "toastr":{
-    "error_title": "Error", 
-    "success_title":"Success",
-    "info_title":"Info!"
+  "navigation": {
+    "home": "Home",
+    "post": "Post",
+    "logout": "Logout"
   },
-  "label":{
-    "email":"E-mail",
-    "password":"Password",
-    "sign_up":"Sign up",
-    "confirm_password":"Confirm password"     
+  "toastr": {
+    "error_title": "Error",
+    "success_title": "Success",
+    "info_title": "Info!"
+  },
+  "label": {
+    "email": "E-mail",
+    "password": "Password",
+    "sign_up": "Sign up",
+    "confirm_password": "Confirm password",
+    "title": "Title",
+    "description": "Description"
   },
   "button": {
     "sign_up": "Sign up",
     "login": "Login",
-    "add":"Add",
-    "toggle": "Toggle"
+    "add": "Add",
+    "toggle": "Toggle",
+    "create_post": "Create post",
+    "cancel": "Cancel",
+    "edit_post": "Edit post"
   },
   "placeholder": {
     "add_number": "Enter a number to add"
@@ -30,7 +40,12 @@
     "decrement_number": "Decrement number",
     "reset_number": "Reset number",
     "add_number": "Add a number",
-    "toggle": "Toggle"
+    "toggle": "Toggle",
+    "home": "Home",
+    "post": "Post",
+    "logout": "Logout",
+    "edit_post": "Edit post",
+    "delete_post": "Delete post"
   },
   "form_error": {
     "password_regex_msg": "Password must containe least one digit, one small letter, one capital letter and one special character.",
